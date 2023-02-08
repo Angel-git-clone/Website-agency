@@ -19,8 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route path="/works" element={<WorksPage />} />
-          <Route path="/studycase/:name-study-case" element={<StudyCase />} />
+          <Route path="/works" element={<WorksPage />} >
+            <Route path="/works/:url" element={<StudyCase />} />
+          </Route> {/*  attention à bien imbriquer les routes pour que celle ci s'affiche dans l'autre */}
         </Routes>
       </div>
     </BrowserRouter>

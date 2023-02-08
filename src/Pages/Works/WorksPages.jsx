@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import dataProjects from '../../Components/StudyCases/data/projects';
 
 const WorksPage = () =>{
@@ -13,6 +13,7 @@ const WorksPage = () =>{
           <NavLink key={work.id} to={'/works/' + work.url}> {work.name} </NavLink>
         ))}
       </div>
+      <Outlet />{/* affiche l'affichages possible */}
     </div>
   )
 };

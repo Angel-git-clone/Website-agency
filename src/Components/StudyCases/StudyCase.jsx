@@ -24,13 +24,14 @@ const StudyCase = () => {
   // let projects = dataProjects[index];
   // const [projects, setProjects] = useState(undefined);
   
-  const {name} = useParams();
-  const projects = dataProjects.find(projects => projects.name === name);
+  const {url} = useParams();
+  const projects = dataProjects.find(project => project.url === url);
   
+  // bouton ne fonctionne pas
   return(
     <div>
       <button onClick={handlePreviousClick}>Previous</button>
-      <button onClick={handleNextClick}>Next</button>
+      <button onClick={handleNextClick}>Next</button> 
 
       <h1>
         {projects.id} - {projects.name}
