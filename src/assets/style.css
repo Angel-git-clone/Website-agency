@@ -1,0 +1,16 @@
+body {
+  background-color:darkslateblue;
+}
+p{
+  display: flex;
+  flex-wrap: wrap;
+  color: aliceblue;
+}
+.content {
+  box-shadow: 12px 12px 0px 5px rgba(255, 0, 115, 0.3);
+  border-color: aliceblue;
+  border-radius: 5px;
+  border-style: groove;
+  background: linear-gradient(#e66464b6, #9198e5);
+  padding: 5vh;
+}
