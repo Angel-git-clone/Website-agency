@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
   <nav className="navbar bg-body-tertiary fixed-top">
     <div className="container-fluid">
-      <NavLink className="navbar-brand" to="#">Navbar Agency</NavLink>
+      <NavLink className="navbar-brand" to="/">Navbar Agency</NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span className="navbar-toggler-icon"></span>
       </button>

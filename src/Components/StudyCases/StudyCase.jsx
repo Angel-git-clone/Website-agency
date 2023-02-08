@@ -11,7 +11,7 @@ const StudyCase = () => {
     }else {
       setIndex(index);
     }
-  }
+  };
 
   function handlePreviousClick() {
     if (index > 0){
@@ -19,18 +19,19 @@ const StudyCase = () => {
     }else {
       setIndex(index);
     }
-  }
+  };
 
   // let projects = dataProjects[index];
   // const [projects, setProjects] = useState(undefined);
   
-  const {url} = useParams();
-  const projects = dataProjects.find(projects => projects.url === url);
+  const {name} = useParams();
+  const projects = dataProjects.find(projects => projects.name === name);
   
   return(
     <div>
       <button onClick={handlePreviousClick}>Previous</button>
       <button onClick={handleNextClick}>Next</button>
+
       <h1>
         {projects.id} - {projects.name}
       </h1>
@@ -40,8 +41,9 @@ const StudyCase = () => {
       <h3>
         {projects.description}
       </h3>
+
     </div>
-  )
+  );
 };
 
 export default StudyCase;

@@ -1,6 +1,3 @@
-import '/src/assets/style.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle';
 
 const HomePage = () => {
   return (
